@@ -12,6 +12,8 @@ export function gameReducer(state, action) {
       return 'sequence_memory';
     case 'VISUAL_MEMORY':
       return 'visual_memory';
+    case 'CHIMP_TEST':
+      return 'chimp_test';
     default:
       return state;
   }

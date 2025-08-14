@@ -20,9 +20,9 @@ function Timer({maxTime, setView, endView}) {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center' }}>
-      <div style={{ width: '200px', height: `10px`, backgroundColor: 'gray' }}>
-        <div style={{ width: `${(time / maxTime) * 200}px`, height: `10px`, backgroundColor: 'blue' }}></div>
-        <h5>{time.toFixed(1)} s</h5>
+      <div style={{ width: '800px', height: `10px`, backgroundColor: 'gray' }}>
+        <div style={{ width: `${(time / maxTime) * 800}px`, height: `10px`, backgroundColor: 'blue' }}></div>
+        <b>{time.toFixed(1)} s</b>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import Menu from './views/Menu.jsx';
 import NumberMemory from './views/NumberMemory.jsx';
 import SequenceMemory from './views/SequenceMemory.jsx';
 import VisualMemory from './views/VisualMemory.jsx';
+import ChimpTest from './views/ChimpTest.jsx';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       {state === 'number_memory' && <NumberMemory dispatch={dispatch} />}
       {state === 'sequence_memory' && <SequenceMemory dispatch={dispatch} />}
       {state === 'visual_memory' && <VisualMemory dispatch={dispatch} />}
+      {state === 'chimp_test' && <ChimpTest dispatch={dispatch} />}
     </div>
   );
 }

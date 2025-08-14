@@ -33,9 +33,9 @@ function Generate({game, setGame, setView}){
     const row = [];
 
     for (let j=0; j<game.size; j++) {
-      let backgroundColor = game.bright.includes(i*game.size+j+1) ? 'white' : 'gray'
-      if(game.goods.includes(i*game.size+j+1)){backgroundColor = 'green'}
-      if(game.bads.includes(i*game.size+j+1)){backgroundColor = 'red'}
+      let backgroundColor = game.bright.includes(i*game.size+j+1) ? '#cccccc' : '#777777'
+      if(game.goods.includes(i*game.size+j+1)){backgroundColor = '#aaccaa'}
+      if(game.bads.includes(i*game.size+j+1)){backgroundColor = '#ccaaaa'}
       row.push(
         <div
           key={`${i*game.size}+${j}+${1}`}
